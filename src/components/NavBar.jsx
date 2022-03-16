@@ -3,7 +3,7 @@ import Button from './Button'
 function NavBar() {
     
     return (
-        <div className="bg-white bg-opacity-90 backdrop-blur-2xl border-b z left-0 right-0 h-16 flex items-center border-b border-gray-900/10 dark:border-gray-50/[0.06] z-10">
+        <div className="bg-white bg-opacity-90 backdrop-blur-2xl border-b fixed left-0 right-0 h-16 flex items-center border-b border-gray-900/10 dark:border-gray-50/[0.06] z-10">
 
             <div className="deveo-container mx-auto w-full grid grid-cols-12 gap-4 items-center">
 
