@@ -1,4 +1,6 @@
 import NavBar from'./components/NavBar'
+import QuickLinks from './components/QuickLinks'
+import FollowDevelopers from './components/FollowDevelops'
 
 function App() {
 
@@ -12,7 +14,7 @@ function App() {
                 <div className="grid grid-cols-12 gap-4">
 
                     <div className="sidebar hidden lg:flex lg:col-span-3 xl:col-span-2 flex-col h-max sticky top-20">
-                        Left Sidebar
+                        <QuickLinks/>
                     </div>
 
                     <div className="posts col-span-full lg:col-span-9 xl:col-span-7 flex flex-col gap-10">
@@ -20,7 +22,7 @@ function App() {
                     </div>
 
                     <div className="hidden xl:block xl:col-span-3">
-                        Right Sidebar
+                        <FollowDevelopers/>
                     </div>
 
                 </div>
