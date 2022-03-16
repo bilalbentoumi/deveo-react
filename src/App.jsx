@@ -1,6 +1,7 @@
 import NavBar from'./components/NavBar'
 import QuickLinks from './components/QuickLinks'
 import FollowDevelopers from './components/FollowDevelops'
+import PostCardLoader from './components/PostCardLoader'
 
 function App() {
 
@@ -18,7 +19,9 @@ function App() {
                     </div>
 
                     <div className="posts col-span-full lg:col-span-9 xl:col-span-7 flex flex-col gap-10">
-                        Content
+                        <PostCardLoader/>
+                        <PostCardLoader/>
+                        <PostCardLoader/>
                     </div>
 
                     <div className="hidden xl:block xl:col-span-3">
