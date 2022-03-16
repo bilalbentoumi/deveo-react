@@ -2,10 +2,12 @@ import './Button.css'
 
 function Button(props) {
 
-    const { children, test, ...rest } = props
+    let { children, className, ...rest } = props
+
+    className = 'btn' + (className ? ' ' + className : '')
 
     return (
-        <button { ...rest }>{ children }</button>
+        <button className={className} { ...rest }>{ children }</button>
     )
 }
 

@@ -1,4 +1,4 @@
-button {
+.btn {
     @apply inline-flex items-center justify-center;
     @apply px-5 py-1.5;
     @apply text-sm font-medium leading-6 text-white;
@@ -8,13 +8,13 @@ button {
     @apply transition duration-150 ease-in-out;
 }
 
-button[outline] {
+.btn[outline] {
     @apply text-indigo-700 hover:text-indigo-500;
     @apply bg-transparent;
     @apply border-indigo-700 hover:border-indigo-500;
 }
 
-button[secondary] {
+.btn[secondary] {
     @apply text-indigo-700 hover:text-indigo-500;
     @apply bg-transparent hover:bg-indigo-50;
     @apply border-transparent;
