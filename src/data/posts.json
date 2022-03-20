@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Learn JavaScript in 2 hours!",
+    "poster": "js.jpg",
+    "read_time": 3,
+    "created_at": "2022-03-17T23:04:18.594+00:00",
+    "author": {
+      "name": "Thomas Burke",
+      "picture": "4.jpeg"
+    }
+  },
+  {
+    "title": "How to create react app with create-react-app",
+    "poster": "react.png",
+    "read_time": 7,
+    "created_at": "2022-02-28T08:17:03.594+00:00",
+    "author": {
+      "name": "Zak Adams",
+      "picture": "3.jpeg"
+    }
+  },
+  {
+    "title": "How to setup storybook in VueJS",
+    "poster": "vue.png",
+    "read_time": 5,
+    "created_at": "2022-02-28T17:01:04.594+00:00",
+    "author": {
+      "name": "Anthony Perry",
+      "picture": "2.jpeg"
+    }
+  },
+  {
+    "title": "Introduction to Amazon Kinesis",
+    "poster": "kinesis.png",
+    "read_time": 10,
+    "created_at": "2022-01-14T16:34:08.594+00:00",
+    "author": {
+      "name": "Max Schneider",
+      "picture": "1.jpeg"
+    }
+  }
+]

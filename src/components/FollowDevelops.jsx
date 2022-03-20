@@ -2,6 +2,10 @@ import developers from '../data/developers.json'
 
 function FollowDevelopers() {
 
+    function getAvatarUrl(avatar) {
+        return new URL(`../assets/avatar/${avatar}`, import.meta.url).href
+    }
+
     return (
         <div className="bg-white shadow rounded-md mb-4 h-max sticky top-20">
 
@@ -14,7 +18,7 @@ function FollowDevelopers() {
                 { developers?.map((developer, index) => (
                     <div className="flex items-center gap-2 py-4" key={ index }>
                         <a href="">
-                            <img className="h-10 w-10 rounded-full" src={ '/src/assets/avatar/' + developer.picture } alt={ developer.name } />
+                            <img className="h-10 w-10 rounded-full" src={ getAvatarUrl(developer.picture) } alt={ developer.name } />
                         </a>
                         <div className="flex flex-col items-start flex-grow">
                             <a href="">{ developer.name }</a>

@@ -1,16 +1,14 @@
 import ContentLoader from 'react-content-loader'
 
 function PostCardLoader() {
-    
+
     return (
         <div className="post-card bg-white shadow rounded-md overflow-hidden ring ring-transparent hover:ring-indigo-500 duration-75">
 
             <div className="post-header">
-
                 <ContentLoader className="w-full h-40 sm:h-52 lg:h-64">
                     <rect x="0" y="0" rx="5" ry="5" width="100%" height="100%" />
                 </ContentLoader>
-
             </div>
 
             <div className="p-4 sm:p-8">
@@ -43,7 +41,7 @@ function PostCardLoader() {
 
                 </div>
 
-                <ContentLoader class="mb-10 w-8/12 h-7 rounded-full">
+                <ContentLoader className="mb-10 w-8/12 h-7 rounded-full">
                     <rect x="0" y="0" rx="5" ry="5" width="100%" height="100%" />
                 </ContentLoader>
 

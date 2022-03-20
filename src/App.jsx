@@ -1,9 +1,20 @@
-import NavBar from'./components/NavBar'
+import { useEffect, useState } from 'react'
+import NavBar from './components/NavBar'
 import QuickLinks from './components/QuickLinks'
 import FollowDevelopers from './components/FollowDevelops'
 import PostCardLoader from './components/PostCardLoader'
+import PostCard from './components/PostCard'
+import postsJson from './data/posts.json'
 
 function App() {
+
+    const [ posts, setPosts ] = useState(null)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setPosts(postsJson)
+        }, 1000)
+    }, [])
 
     return (
         <div className="app">
@@ -19,9 +30,19 @@ function App() {
                     </div>
 
                     <div className="posts col-span-full lg:col-span-9 xl:col-span-7 flex flex-col gap-10">
-                        <PostCardLoader/>
-                        <PostCardLoader/>
-                        <PostCardLoader/>
+
+                        { !posts &&
+                            <>
+                                <PostCardLoader />
+                                <PostCardLoader />
+                                <PostCardLoader />
+                            </>
+                        }
+
+                        { posts && posts?.map((post, index) => (
+                            <PostCard post={ post } key={ index } />
+                        )) }
+
                     </div>
 
                     <div className="hidden xl:block xl:col-span-3">
