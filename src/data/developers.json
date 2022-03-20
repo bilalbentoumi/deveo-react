@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Thomas Burke",
+    "picture": "4.jpeg",
+    "posts": 5
+  },
+  {
+    "name": "Zak Adams",
+    "picture": "3.jpeg",
+    "posts": 11
+  },
+  {
+    "name": "Anthony Perry",
+    "picture": "2.jpeg",
+    "posts": 7
+  },
+  {
+    "name": "Max Schneider",
+    "picture": "1.jpeg",
+    "posts": 17
+  }
+]
