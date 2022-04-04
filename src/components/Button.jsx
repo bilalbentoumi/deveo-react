@@ -7,7 +7,7 @@ function Button(props) {
     className = 'btn' + (className ? ' ' + className : '')
 
     return (
-        <button className={className} { ...rest }>{ children }</button>
+        <button className={ className } { ...rest }>{ children }</button>
     )
 }
 
